@@ -23,7 +23,7 @@
       >
         <li v-for="(service, index) in services" :key="index">
           <article
-            class="bg-white rounded-xl p-8 hover:shadow-lg transition-all duration-300 hover:translate-y-[-5px]h-full flex flex-col"
+            class="bg-white rounded-xl p-8 hover:shadow-lg transition-all duration-300 hover:translate-y-[-5px] h-full flex flex-col"
           >
             <figure class="mb-6">
               <Icon :icon="service.icon" class="text-4xl text-pink-600" aria-hidden="true" />
@@ -53,6 +53,16 @@
           </article>
         </li>
       </ul>
+      <!-- CTA Section -->
+      <footer data-aos="fade-up" data-aos-delay="600" class="mt-20 text-center">
+        <h3 class="text-2xl font-bold text-gray-800 mb-6">Ready to transform your look?</h3>
+        <a
+          href="#appointment"
+          class="bg-pink-600 hover:bg-pink-700 text-white text-center px-8 py-3 rounded-full inline-block transition shadow-lg focus:outline-none focus:ring-2 focus:ring-pink-800 focus:ring-offset-2"
+        >
+          Book A Consultation
+        </a>
+      </footer>
     </div>
   </section>
 </template>
